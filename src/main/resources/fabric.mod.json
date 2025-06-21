@@ -1,0 +1,38 @@
+{
+	"schemaVersion": 1,
+	"id": "last-death-location",
+	"version": "${version}",
+	"name": "Last Death Location",
+	"description": "Shows your last death location - /lastdeath",
+	"authors": [
+		"TrRuki"
+	],
+	"contact": {
+		"homepage": "https://modrinth.com/mod/last-death-loc"
+	},
+	"license": "GPL-3.0",
+	"icon": "assets/last-death-location/icon.png",
+	"environment": "client",
+	"entrypoints": {
+		"main": [
+			"me.trruki.LastDeathLocation"
+		],
+		"fabric-datagen": [
+			"me.trruki.LastDeathLocationDataGenerator"
+		],
+		"client": [
+			"me.trruki.LastDeathLocationClient"
+		]
+	},
+	"mixins": [
+	],
+	"depends": {
+		"fabricloader": ">=0.16.10",
+		"minecraft": ">=1.21.5 <=1.21.6",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
